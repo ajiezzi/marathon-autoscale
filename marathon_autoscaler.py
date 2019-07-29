@@ -14,6 +14,7 @@ from autoscaler.modes.scalesqs import ScaleBySQS
 from autoscaler.modes.scalemem import ScaleByMemory
 from autoscaler.modes.scalecpuandmem import ScaleByCPUAndMemory
 from autoscaler.modes.scalebycpuormem import ScaleByCPUOrMemory
+from autoscaler.modes.scalecpumemsqs import ScaleByCPUMemorySQS
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -35,7 +36,8 @@ class Autoscaler:
         'cpu': ScaleByCPU,
         'mem': ScaleByMemory,
         'and': ScaleByCPUAndMemory,
-        'or': ScaleByCPUOrMemory
+        'or': ScaleByCPUOrMemory,
+        'all3': ScaleByCPUMemorySQS
     }
 
     def __init__(self):
