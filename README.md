@@ -56,7 +56,7 @@ Core environment variables available to the application:
     AS_TRIGGER_MODE # scaling mode (cpu | mem | sqs | and | or)
 
     AS_AUTOSCALE_MULTIPLIER # The number by which current instances will be multiplied (scale-out) or divided (scale-in). This determines how many instances to add during scale-out, or remove during scale-in.
-    AS_MIN_INSTANCES # min number of instances, don’t make less than 2
+    AS_MIN_INSTANCES # min number of instances
     AS_MAX_INSTANCES # max number of instances, must be greater than AS_MIN_INSTANCES
 
     AS_COOL_DOWN_FACTOR # how many times should we poll before scaling down
