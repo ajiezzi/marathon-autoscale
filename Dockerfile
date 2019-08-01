@@ -29,5 +29,7 @@ RUN pip3 install -r requirements.txt
 
 RUN chown -R nobody:nobody $DATA_FOLDER
 
+USER nobody
+
 # Start the autoscale application
 CMD python3 marathon_autoscaler.py

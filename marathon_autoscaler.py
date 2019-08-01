@@ -66,6 +66,7 @@ class Autoscaler:
             level = logging.INFO
 
         logging.basicConfig(
+            stream=sys.stdout,
             level=level,
             format=self.LOGGING_FORMAT
         )
